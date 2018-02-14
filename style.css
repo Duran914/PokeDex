@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+::placeholder{
+    color: #000;
+    font-family: 'Press Start 2P';
+}
+input[type="text"]
+{
+    font-size:14px;
+    color: #000;
+    font-family: 'Press Start 2P';
+}
+
+/* body */
+body{
+    background-color: #fff;
+    margin: 0;
+    padding:0;
+    font-family: sans-serif,serif;
+  }
+
+    .container{
+        margin: auto;
+        padding-top: 4%;
+        padding-bottom: 4%;
+      }
+
+/* Navbar */
+nav{
+    background-color: rgb(223, 27, 27);
+    padding: 5px;
+    width: 100%;
+}
+
+.nav-heading{
+    text-align: center;
+    color: #fff;
+}
+
+.pokaDex{
+    margin: auto;
+    width: 700px;
+    height: 450px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(223, 27, 27);
+    border: 5px solid darkred;
+    box-shadow: 0 0 10px #e6e6e6;
+}
+
+.smCircles div{
+    display: inline-block;
+}
+
+.smCircles{
+    margin-left: 20px;
+    margin-top: -40px;
+}
+
+.circles{
+    display: inline block;
+}
+
+.blueCircle{
+    /* margin-top: -40px; */
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px;
+    height: 70px;
+    width: 70px;
+    background-color: rgb(41, 125, 223);
+    border-radius: 50%;
+    float: left;
+}
+
+.redCircle{
+  height: 20px;
+  width: 20px;
+  background-color:red;
+  border-radius: 10px;
+  border: 1px solid #000;
+  box-shadow: 0 0 1px;
+}
+.yellowCircle{
+  height: 20px;
+  width: 20px;
+  background-color:yellow;
+  border-radius: 10px;
+  border: 1px solid #000;
+  box-shadow: 0 0 1px;
+}
+.greenCircle{
+  height: 20px;
+  width: 20px;
+  background-color: green;
+  border-radius: 10px;  
+  border: 1px solid #000; 
+  box-shadow: 0 0 1px; 
+}
+.nav-heading{
+    margin-left: 275px;
+    margin-top: -5px; 
+}
+
+.screens{
+    margin-top: 20px;
+}
+.outerScreen{
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+    background-color: #b0b0b0;
+    padding: 10px;
+    
+}
+
+.outerScreenRedBtn{
+    height: 20px;
+    width: 20px;
+    background-color:rgb(163, 39, 39);
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 0 1px;
+    margin-top: 5px;
+}
+
+.outerScreenSpeakers{
+    margin-top: -15px;
+}
+
+.outerScreenSpeakers .sp{
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #494949;
+    margin-left: 320px;
+    width: 40px;
+}
+
+.innerScreen{
+    border-radius: 15px;
+    background-color: #fff;
+    border: 3px solid #807f7f;
+    height: 200px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+.stats{
+    text-align: left;
+}
+.stats ul{
+    list-style-type: none;
+    margin-left: -30px;
+    font-size: 12px;
+    font-family: 'Press Start 2P';
+}
+.stats ul li{
+    height: 50px;
+}
+
+
+.pokemon-img{
+    width: 200px;
+    margin-top: -205px;
+    margin-left: 25px;
+    float: right;
+}
+.pokemonImgDiv{
+    float: right;
+}
+
+.greenScreen{
+    border-radius: 10px;
+    float: right;
+    width: 70%;
+    height: 250px;
+    background-color: #30da0c;
+    padding: 10px;
+    box-shadow: 0 0 20px #003300 inset
+}
+
+.greenScreen .look-up-form{
+    height: 30px;
+    border: none;
+    width: 100%;
+    background: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.342); 
+}
+
+.greenScreen p{
+    font-size: 12px;
+    font-family: 'Press Start 2P';
+}
+
+/* Grid */
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .row:after{
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  *{
+    box-sizing: border-box;
+  }
