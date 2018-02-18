@@ -2,9 +2,17 @@
 
     // input field for seach 
 const filterInput = document.querySelector('#pokemon-lookup');
-
+      ulPokemonName = document.querySelector('#name');
+      ulPokemonType = document.querySelector('#type');
+      ulPokemonSpecies = document.querySelector('#species');
+      ulPokenmonHp = document.querySelector('#hp');
+      ulPokemonNumber = document.querySelector('#pokeNum');
+      ulPokemonList = document.getElementsByClassName('pokemon-list');
+      ulPokemonPicture = document.querySelector('.pokemon-img');
 // ui class
-class Ui{}
+class Ui{
+    
+}
 
 // Pokemon class
 
@@ -14,9 +22,31 @@ class Pokemon{
         this.type = type;
         this.species = species;
         this.hp = hp;
-        this.number;
+        this.number = number;
     }
 }
+
+
+const bulbasaur = new Pokemon('Bulbasaur', 'Grass', 'Seed', '45', '001');
+console.log(ulPokemonList);
+
+const pickedPokemon = document.querySelectorAll('#pokemon');
+
+pickedPokemon.forEach(function(pokemon){
+    console.log(pokemon);
+
+        pokemon.addEventListener('click', function(e){
+        console.log(e.target.textContent);
+        
+        ulPokemonName.innerHTML += bulbasaur.name;
+        ulPokemonType.innerHTML += bulbasaur.type;
+        ulPokemonSpecies.innerHTML += bulbasaur.species;
+        ulPokenmonHp.innerHTML += bulbasaur.hp;
+        ulPokemonNumber.innerHTML += bulbasaur.number;
+        ulPokemonPicture.setAttribute('src', `images/${bulbasaur.name}.png`)
+    });
+
+});
 
 // Event listeners
     filterInput.addEventListener('keyup', filterPokemon);
@@ -64,4 +94,9 @@ window.onload = function setTime() {
             }
          });
         }
+
+
+
+
+
     

@@ -42,14 +42,15 @@
                                         <div class="stats">
                                             <ul>
                                                 <!-- temporary dummy text -->
-                                                <li>NAME: Blastoise</li>
-                                                <li>TYPE: Water</li>
-                                                <li>SPECIES: Shellfish</li>
-                                                <li>HP: 79</li>
+                                                <li id="name">NAME:</li>
+                                                <li id="type">TYPE:</li>
+                                                <li id="species">SPECIES:</li>
+                                                <li id="hp">HP:</li>
                                             </ul>
                                         </div>
+                                        <div id="pokemon-im"></div>
                                         <!-- temporary placeholder img -->
-                                        <img class="pokemon-img" src="images/9.png" alt="">
+                                        <img class="pokemon-img" alt="">
                                         <!--  -->
                                         <!-- <img class="pokemon-ball" src="images/pokaball.png" alt=""> -->
                                     </div>
@@ -66,33 +67,168 @@
                             <input class="look-up-form" placeholder="Search:" type="text" id="pokemon-lookup">
                             <div class="pokemonNames">
                                 <ul class="pokemon-list">
-<li>Bulbasaur</li><li>Ivysaur</li><li>Venusaur</li><li>Charmander</li><li>Charmeleon</li><li>Charizard</li><li>Squirtle</li><li>Wartortle</li><li>Blastoise</li> 
-<li>Caterpie</li><li>Metapod</li><li>Butterfree</li><li>Weedle</li><li>Kakuna</li><li>Beedrill</li><li>Pidgey</li><li>Pidgeotto</li><li>Pidgeot</li>
-<li>Rattata</li><li>Raticate</li><li>Spearow</li><li>Fearow</li><li>Ekans</li><li>Arbok</li><li>Pikachu</li><li>Raichu</li><li>Sandshrew</li>
-<li>Sandslash</li><li>Nidoran&#9792;</li><li>Nidoqueen</li><li>Nidoran&#9794;</li><li>Nidorino</li><li>Nidoking</li><li>Clefairy</li><li>Clefable</li>
-<li>Vulpix</li><li>Ninetales</li><li>Jigglypuff</li><li>Wigglytuff</li><li>Zubat</li><li>Golbat</li><li>Oddish</li><li>Gloom</li><li>Vileplume</li>
-<li>Paras</li><li>Parasect</li><li>Venonat</li><li>Venomoth</li><li>Diglett</li><li>Dugtrio</li><li>Meowth</li><li>Persian</li><li>Psyduck</li><li>Golduck</li>
-<li>Mankey</li><li>Primeape</li><li>Growlithe</li><li>Arcanine</li><li>Poliwag</li><li>Poliwhirl</li><li>Poliwrath</li><li>Abra</li><li>Kadabra</li>
-<li>Alakazam</li><li>Machop</li><li>Machoke</li><li>Machamp</li><li>Bellsprout</li><li>Weepinbell</li><li>Victreebel</li><li>Tentacool</li><li>Tentacruel</li>
-<li>Geodude</li><li>Graveler</li><li>Golem</li><li>Ponyta</li><li>Rapidash</li><li>Slowpoke</li><li>Slowbro</li><li>Magnemite</li><li>Magneton</li>
-<li>Farfetch'd</li><li>Doduo</li><li>Dodrio</li><li>Seel</li><li>Dewgong</li> <li>Grimer</li><li>Muk</li><li>Shellder</li><li>Cloyster</li><li>Gastly</li>
-<li>Gengar</li><li>Onix</li><li>Drowzee</li><li>Hypno</li><li>Krabby</li><li>Kingler</li><li>Voltorb</li><li>Electrode</li><li>Exeggcute</li><li>Exeggutor</li>
-<li>Cubone</li><li>Marowak</li><li>Hitmonlee</li><li>Hitmonchan</li><li>Lickitung</li><li>Koffing</li><li>Weezing</li><li>Rhyhorn</li><li>Rhydon</li>
-<li>Chansey</li><li>Tangela</li><li>Kangaskhan</li><li>Horsea</li><li>Seadra</li><li>Goldeen</li><li>Seaking</li><li>Staryu</li><li>Starmie</li>
-<li>Mr.Mime</li><li>Scyther</li><li>Jynx</li><li>Electabuzz</li><li>Magmar</li><li>Pinsir</li><li>Tauros</li><li>Magikarp</li><li>Gyarados</li><li>Lapras</li>
-<li>Ditto</li><li>Eevee</li><li>Vaporeon</li><li>Jolteon</li><li>Flareon</li><li>Porygon</li><li>Omanyte</li><li>Omastar</li><li>Kabuto</li><li>Kabutops</li>
-<li>Aerodactyl</li><li>Snorlax</li><li>Articuno</li><li>Zapdos</li><li>Moltres</li><li>Dratini</li><li>Dragonair</li><li>Dragonite</li><li>Mewtwo</li><li>Mew</li>
+<li id="pokemon">Bulbasaur</li>
+<li id="pokemon">Ivysaur</li>
+<li id="pokemon">Venusaur</li>
+<li id="pokemon">Charmander</li>
+<li id="pokemon">Charmeleon</li>
+<li id="pokemon">Charizard</li>
+<li id="pokemon">Squirtle</li>
+<li id="pokemon">Wartortle</li>
+<li id="pokemon">Blastoise</li>
+<li id="pokemon">Caterpie</li>
+<li id="pokemon">Metapod</li>
+<li id="pokemon">Butterfree</li>
+<li id="pokemon">Weedle</li>
+<li id="pokemon">Kakuna</li>
+<li id="pokemon">Beedrill</li>
+<li id="pokemon">Pidgey</li>
+<li id="pokemon">Pidgeotto</li>
+<li id="pokemon">Pidgeot</li>
+<li id="pokemon">Rattata</li>
+<li id="pokemon">Raticate</li>
+<li id="pokemon">Spearow</li>
+<li id="pokemon">Fearow</li>
+<li id="pokemon">Ekans</li>
+<li id="pokemon">Arbok</li>
+<li id="pokemon">Pikachu</li>
+<li id="pokemon">Raichu</li>
+<li id="pokemon">Sandshrew</li>
+<li id="pokemon">Sandslash</li>
+<li id="pokemon">Nidoran♀</li>
+<li id="pokemon">Nidorina</li>
+<li id="pokemon">Nidoqueen</li>
+<li id="pokemon">Nidoran♂</li>
+<li id="pokemon">Nidorino</li>
+<li id="pokemon">Nidoking</li>
+<li id="pokemon">Clefairy</li>
+<li id="pokemon">Clefable</li>
+<li id="pokemon">Vulpix</li>
+<li id="pokemon">Ninetales</li>
+<li id="pokemon">Jigglypuff</li>
+<li id="pokemon">Wigglytuff</li>
+<li id="pokemon">Zubat</li>
+<li id="pokemon">Golbat</li>
+<li id="pokemon">Oddish</li>
+<li id="pokemon">Gloom</li>
+<li id="pokemon">Vileplume</li>
+<li id="pokemon">Paras</li>
+<li id="pokemon">Parasect</li>
+<li id="pokemon">Venonat</li>
+<li id="pokemon">Venomoth</li>
+<li id="pokemon">Diglett</li>
+<li id="pokemon">Dugtrio</li>
+<li id="pokemon">Meowth</li>
+<li id="pokemon">Persian</li>
+<li id="pokemon">Psyduck</li>
+<li id="pokemon">Golduck</li>
+<li id="pokemon">Mankey</li>
+<li id="pokemon">Primeape</li>
+<li id="pokemon">Growlithe</li>
+<li id="pokemon">Arcanine</li>
+<li id="pokemon">Poliwag</li>
+<li id="pokemon">Poliwhirl</li>
+<li id="pokemon">Poliwrath</li>
+<li id="pokemon">Abra</li>
+<li id="pokemon">Kadabra</li>
+<li id="pokemon">Alakazam</li>
+<li id="pokemon">Machop</li>
+<li id="pokemon">Machoke</li>
+<li id="pokemon">Machamp</li>
+<li id="pokemon">Bellsprout</li>
+<li id="pokemon">Weepinbell</li>
+<li id="pokemon">Victreebel</li>
+<li id="pokemon">Tentacool</li>
+<li id="pokemon">Tentacruel</li>
+<li id="pokemon">Geodude</li>
+<li id="pokemon">Graveler</li>
+<li id="pokemon">Golem</li>
+<li id="pokemon">Ponyta</li>
+<li id="pokemon">Rapidash</li>
+<li id="pokemon">Slowpoke</li>
+<li id="pokemon">Slowbro</li>
+<li id="pokemon">Magnemite</li>
+<li id="pokemon">Magneton</li>
+<li id="pokemon">Farfetch'd</li>
+<li id="pokemon">Doduo</li>
+<li id="pokemon">Dodrio</li>
+<li id="pokemon">Seel</li>
+<li id="pokemon">Dewgong</li>
+<li id="pokemon">Grimer</li>
+<li id="pokemon">Muk</li>
+<li id="pokemon">Shellder</li>
+<li id="pokemon">Cloyster</li>
+<li id="pokemon">Gastly</li>
+<li id="pokemon">Haunter</li>
+<li id="pokemon">Gengar</li>
+<li id="pokemon">Onix</li>
+<li id="pokemon">Drowzee</li>
+<li id="pokemon">Hypno</li>
+<li id="pokemon">Krabby</li>
+<li id="pokemon">Kingler</li>
+<li id="pokemon">Voltorb</li>
+<li id="pokemon">Electrode</li>
+<li id="pokemon">Exeggcute</li>
+<li id="pokemon">Exeggutor</li>
+<li id="pokemon">Cubone</li>
+<li id="pokemon">Marowak</li>
+<li id="pokemon">Hitmonlee</li>
+<li id="pokemon">Hitmonchan</li>
+<li id="pokemon">Lickitung</li>
+<li id="pokemon">Koffing</li>
+<li id="pokemon">Weezing</li>
+<li id="pokemon">Rhyhorn</li>
+<li id="pokemon">Rhydon</li>
+<li id="pokemon">Chansey</li>
+<li id="pokemon">Tangela</li>
+<li id="pokemon">Kangaskhan</li>
+<li id="pokemon">Horsea</li>
+<li id="pokemon">Seadra</li>
+<li id="pokemon">Goldeen</li>
+<li id="pokemon">Seaking</li>
+<li id="pokemon">Staryu</li>
+<li id="pokemon">Starmie</li>
+<li id="pokemon">Mr.Mime</li>
+<li id="pokemon">Scyther</li>
+<li id="pokemon">Jynx</li>
+<li id="pokemon">Electabuzz</li>
+<li id="pokemon">Magmar</li>
+<li id="pokemon">Pinsir</li>
+<li id="pokemon">Tauros</li>
+<li id="pokemon">Magikarp</li>
+<li id="pokemon">Gyarados</li>
+<li id="pokemon">Lapras</li>
+<li id="pokemon">Ditto</li>
+<li id="pokemon">Eevee</li>
+<li id="pokemon">Vaporeon</li>
+<li id="pokemon">Jolteon</li>
+<li id="pokemon">Flareon</li>
+<li id="pokemon">Porygon</li>
+<li id="pokemon">Omanyte</li>
+<li id="pokemon">Omastar</li>
+<li id="pokemon">Kabuto</li>
+<li id="pokemon">Kabutops</li>
+<li id="pokemon">Aerodactyl</li>
+<li id="pokemon">Snorlax</li>
+<li id="pokemon">Articuno</li>
+<li id="pokemon">Zapdos</li>
+<li id="pokemon">Moltres</li>
+<li id="pokemon">Dratini</li>
+<li id="pokemon">Dragonair</li>
+<li id="pokemon">Dragonite</li>
+<li id="pokemon">Mewtwo</li>
+<li id="pokemon">Mew</li>
                                  </ul>
                               </div>
                             </div>
-                          </div>
+                          </div> 
                         </div>
                         </div>
                         <div class="buttons">
                             <div class="row">
                                 <div class="col-2">
                                     <div class="miniGreenScreen"><br>
-                                        <span class="pokemonNumber">#009</span>
+                                        <span id="pokeNum" class="pokemonNumber"></span>
                                     </div>
                                 </div>
                                 <div class="col-2">
