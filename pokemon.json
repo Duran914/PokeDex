@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Bulbasaur",
+        "hp": 45,
+        "type": "Grass/Poison",
+        "species": "Seed",
+        "number": "001"
+
+    },
+    {
+
+        "name": "Ivysaur",
+        "hp": 60,
+        "type": "Grass/Poison",
+        "species": "Seed",
+        "number": "002"    
+
+    },
+    {
+
+        "name": "Venusaur",
+        "hp": 80,
+        "type":  "Grass/Poison",
+        "species": "Seed",
+        "number": "003"    
+
+    }
+]

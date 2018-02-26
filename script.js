@@ -9,10 +9,7 @@ const filterInput = document.querySelector('#pokemon-lookup');
       ulPokemonNumber = document.querySelector('#pokeNum');
       ulPokemonList = document.getElementsByClassName('pokemon-list');
       ulPokemonPicture = document.querySelector('.pokemon-img');
-// ui class
-class Ui{
-    
-}
+      pickedPokemon = document.querySelectorAll('#pokemon');
 
 // Pokemon class
 
@@ -24,28 +21,47 @@ class Pokemon{
         this.hp = hp;
         this.number = number;
     }
+    
+}   
+// const bulbasaur = new Pokemon('Bulbasaur', 'Grass/Posion', 'Seed', '45', '001');
+// const ivysaur = new Pokemon('Ivysaur', 'Grass/Posion', 'Seed', '60', '002');
+
+// ui class
+class Ui{
+
 }
-
-
-const bulbasaur = new Pokemon('Bulbasaur', 'Grass', 'Seed', '45', '001');
-console.log(ulPokemonList);
-
-const pickedPokemon = document.querySelectorAll('#pokemon');
-
+       
 pickedPokemon.forEach(function(pokemon){
-    console.log(pokemon);
-
-        pokemon.addEventListener('click', function(e){
-        console.log(e.target.textContent);
         
-        ulPokemonName.innerHTML += bulbasaur.name;
-        ulPokemonType.innerHTML += bulbasaur.type;
-        ulPokemonSpecies.innerHTML += bulbasaur.species;
-        ulPokenmonHp.innerHTML += bulbasaur.hp;
-        ulPokemonNumber.innerHTML += bulbasaur.number;
-        ulPokemonPicture.setAttribute('src', `images/${bulbasaur.name}.png`)
-    });
+        pokemon.addEventListener('click', function(e){
+        const test = e.target.innerHTML;
+            console.log(test);
+            
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'pokemon.json', true);
 
+        xhr.onload = function(){
+            if(this.status === 200){
+            const pokemons = JSON.parse(this.responseText); 
+
+              for (let i = 0; i < pokemons.length; i++) {
+                  const element = pokemons[i];
+
+                  if(element.name === test){
+                 console.log(element.name,element.type);
+                 ulPokemonName.innerHTML =`NAME: ${element.name}`;
+                 ulPokemonType.innerHTML = `TYPE: ${element.type}`;
+                 ulPokemonSpecies.innerHTML = `SPECIES: ${element.species}`;
+                 ulPokenmonHp.innerHTML = `HP: ${element.hp}`;
+                 ulPokemonNumber.innerHTML = element.number;
+                 ulPokemonPicture.setAttribute('src', `images/${test}.png`); 
+                 
+                }
+              }
+            }
+        }
+        xhr.send();
+    });
 });
 
 // Event listeners
@@ -74,6 +90,10 @@ window.onload = function setTime() {
     if (min < 10) {
         min = "0" + min;
     }
+    // adds 1 for 1am
+    if(hour == 0){
+        hour += 1;
+    }
 
     timeDiv.innerHTML = `${hour}:${min}${amPm}`;
     var t = setTimeout(setTime, 1000);
@@ -84,9 +104,9 @@ window.onload = function setTime() {
     function filterPokemon(e){
         const pokemonName = e.target.value.toLowerCase();
         document.querySelectorAll('.pokemon-list li').forEach(function(name){
-        const pokemon = name.firstChild.textContent;
+        const pokemonList = name.firstChild.textContent;
 
-        if (pokemon.toLowerCase().indexOf(pokemonName) == 0) {
+        if (pokemonList.toLowerCase().indexOf(pokemonName) == 0) {
             name.style.display = 'block';
         }
         else{
@@ -94,6 +114,7 @@ window.onload = function setTime() {
             }
          });
         }
+
 
 
 
