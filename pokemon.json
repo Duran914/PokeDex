@@ -105,13 +105,6 @@
         "number": "015"
     },
     {
-        "name": "Beedrill",
-        "hp": 65,
-        "type": "Bug/Poison",
-        "species": "Bee",
-        "number": "015"
-    },
-    {
         "name": "Pidgey",
         "hp": 40,
         "type": "Flying",
@@ -229,13 +222,6 @@
         "type": "Poison",
         "species": "Poison Pin",
         "number": "032"
-    },
-    {
-        "name": "Nidorino",
-        "hp": 61,
-        "type": "Poison",
-        "species": "Poison Pin",
-        "number": "033"
     },
     {
         "name": "Nidorino",
@@ -537,5 +523,537 @@
         "type": "Rock/Ground",
         "species": "Rock",
         "number": "075"
+    },
+    {
+        "name": "Golem",
+        "hp": 80,
+        "type": "Rock/Ground",
+        "species": "Megaton",
+        "number": "076"
+    },
+    {
+        "name": "Ponyta",
+        "hp": 50,
+        "type": "Fire",
+        "species": "Horse",
+        "number": "077"
+    },
+    {
+        "name": "Rapidash",
+        "hp": 65,
+        "type": "Fire",
+        "species": "Horse",
+        "number": "078"
+    },
+    {
+        "name": "Slowpoke",
+        "hp": 90,
+        "type": "Water/Psychic",
+        "species": "Dopey",
+        "number": "079"
+    },
+    {
+        "name": "Slowbro",
+        "hp": 95,
+        "type": "Water/Psychic",
+        "species": "Hermit Crab",
+        "number": "080"
+    },
+    {
+        "name": "Magnemite",
+        "hp": 25,
+        "type": "Electric/Steel",
+        "species": "Magnet",
+        "number": "081"
+    },
+    {
+        "name": "Magneton",
+        "hp": 50,
+        "type": "Electric/Steel",
+        "species": "Magnet",
+        "number": "082"
+    },
+    {
+        "name": "Farfetch'd",
+        "hp": 52,
+        "type": "Flying",
+        "species": "Wild Duck",
+        "number": "083"
+    },
+    {
+        "name": "Doduo",
+        "hp": 35,
+        "type": "Flying",
+        "species": "Twin Bird",
+        "number": "084"
+    },
+    {
+        "name": "Dodrio",
+        "hp": 60,
+        "type": "Flying",
+        "species": "Triple Bird",
+        "number": "085"
+    },
+    {
+        "name": "Seel",
+        "hp": 65,
+        "type": "Water",
+        "species": "Sea Lion",
+        "number": "086"
+    },
+    {
+        "name": "Dewgong",
+        "hp": 90,
+        "type": "Water/Ice",
+        "species": "Sea Lion",
+        "number": "087"
+    },
+    {
+        "name": "Grimer",
+        "hp": 80,
+        "type": "Poison",
+        "species": "Sludge",
+        "number": "088"
+    },
+    {
+        "name": "Muk",
+        "hp": 105,
+        "type": "Poison",
+        "species": "Sludge",
+        "number": "089"
+    },
+    {
+        "name": "Shellder",
+        "hp": 30,
+        "type": "Water",
+        "species": "Bivalve",
+        "number": "090"
+    },
+    {
+        "name": "Cloyster",
+        "hp": 50,
+        "type": "Water/Ice",
+        "species": "Bivalve",
+        "number": "091"
+    },
+    {
+        "name": "Gastly",
+        "hp": 30,
+        "type": "Ghost/Posion",
+        "species": "Gas",
+        "number": "092"
+    },
+    {
+        "name": "Haunter",
+        "hp": 45,
+        "type": "Ghost/Posion",
+        "species": "Gas",
+        "number": "093"
+    },
+    {
+        "name": "Gengar",
+        "hp": 60,
+        "type": "Ghost/Posion",
+        "species": "Shadow",
+        "number": "094"
+    },
+    {
+        "name": "Onix",
+        "hp": 35,
+        "type": "Rock/Ground",
+        "species": "Rock Snake",
+        "number": "095"
+    },
+    {
+        "name": "Drowzee",
+        "hp": 60,
+        "type": "Psychic",
+        "species": "Hypnosis",
+        "number": "096"
+    },
+    {
+        "name": "Hypno",
+        "hp": 85,
+        "type": "Psychic",
+        "species": "Hypnosis",
+        "number": "097"
+    },
+    {
+        "name": "Krabby",
+        "hp": 30,
+        "type": "Water",
+        "species": "River Crab",
+        "number": "098"
+    },
+    {
+        "name": "Kingler",
+        "hp": 55,
+        "type": "Water",
+        "species": "Pincer",
+        "number": "099"
+    },
+    {
+        "name": "Voltorb",
+        "hp": 40,
+        "type": "Elelctric",
+        "species": "Ball",
+        "number": "100"
+    },
+    {
+        "name": "Electrode",
+        "hp": 60,
+        "type": "Elelctric",
+        "species": "Ball",
+        "number": "101"
+    },
+    {
+        "name": "Exeggcute",
+        "hp": 60,
+        "type": "Grass/Psychic",
+        "species": "Egg",
+        "number": "102"
+    },
+    {
+        "name": "Exeggutor",
+        "hp": 95,
+        "type": "Grass/Psychic",
+        "species": "Coconut",
+        "number": "103"
+    },
+    {
+        "name": "Cubone",
+        "hp": 50,
+        "type": "Ground",
+        "species": "Lonely",
+        "number": "104"
+    },
+    {
+        "name": "Marowak",
+        "hp": 60,
+        "type": "Ground",
+        "species": "Bone Keeper",
+        "number": "105"
+    },
+    {
+        "name": "Hitmonlee",
+        "hp": 50,
+        "type": "Fighting",
+        "species": "Kicking",
+        "number": "106"
+    },
+    {
+        "name": "Hitmonchan",
+        "hp": 50,
+        "type": "Fighting",
+        "species": "Punching",
+        "number": "107"
+    },
+    {
+        "name": "Lickitung",
+        "hp": 90,
+        "type": "Normal",
+        "species": "Licking",
+        "number": "108"
+    },
+    {
+        "name": "Koffing",
+        "hp": 40,
+        "type": "Poison",
+        "species": "Poison Gas",
+        "number": "109"
+    },
+    {
+        "name": "Weezing",
+        "hp": 65,
+        "type": "Poison",
+        "species": "Poison Gas",
+        "number": "110"
+    },
+    {
+        "name": "Rhyhorn",
+        "hp": 80,
+        "type": "Ground/Rock",
+        "species": "Spikes",
+        "number": "111"
+    },
+    {
+        "name": "Rhydon",
+        "hp": 105,
+        "type": "Ground/Rock",
+        "species": "Drill",
+        "number": "112"
+    },
+    {
+        "name": "Chansey",
+        "hp": 250,
+        "type": "Normal",
+        "species": "Egg",
+        "number": "113"
+    },
+    {
+        "name": "Tangela",
+        "hp": 65,
+        "type": "Grass",
+        "species": "Vine",
+        "number": "114"
+    },
+    {
+        "name": "Kangaskhan",
+        "hp": 105,
+        "type": "Noraml",
+        "species": "Parent",
+        "number": "115"
+    },
+    {
+        "name": "Horsea",
+        "hp": 30,
+        "type": "Water",
+        "species": "Dragon",
+        "number": "116"
+    },
+    {
+        "name": "Seadra",
+        "hp": 55,
+        "type": "Water",
+        "species": "Dragon",
+        "number": "117"
+    },
+    {
+        "name": "Goldeen",
+        "hp": 45,
+        "type": "Water",
+        "species": "Goldfish",
+        "number": "118"
+    },
+    {
+        "name": "Seaking",
+        "hp": 80,
+        "type": "Water",
+        "species": "Goldfish",
+        "number": "119"
+    },
+    {
+        "name": "Staryu",
+        "hp": 30,
+        "type": "Water",
+        "species": "Star",
+        "number": "120"
+    },
+    {
+        "name": "Starmie",
+        "hp": 60,
+        "type": "Water/Psychic",
+        "species": "Mysterious",
+        "number": "121"
+    },
+    {
+        "name": "Mr.Mime",
+        "hp": 40,
+        "type": "Psychic/Fairy",
+        "species": "Barrier",
+        "number": "122"
+    },
+    {
+        "name": "Scyther",
+        "hp": 70,
+        "type": "Bug/Flying",
+        "species": "Mantis",
+        "number": "123"
+    },
+    {
+        "name": "Jynx",
+        "hp": 65,
+        "type": "Ice/Psychic",
+        "species": "Human Shape",
+        "number": "124"
+    },
+    {
+        "name": "Electabuzz",
+        "hp": 65,
+        "type": "Electric",
+        "species": "Elelctic",
+        "number": "125"
+    },
+    {
+        "name": "Magmar",
+        "hp": 65,
+        "type": "Fire",
+        "species": "Spitfire",
+        "number": "126"
+    },
+    {
+        "name": "Pinsir",
+        "hp": 65,
+        "type": "Bug",
+        "species": "Beetle",
+        "number": "127"
+    },
+    {
+        "name": "Tauros",
+        "hp": 75,
+        "type": "NormalBug",
+        "species": "Wild Bull",
+        "number": "128"
+    },
+    {
+        "name": "Magikarp",
+        "hp": 20,
+        "type": "Water",
+        "species": "Fish",
+        "number": "129"
+    },
+    {
+        "name": "Gyarados",
+        "hp": 95,
+        "type": "Water/Flying",
+        "species": "Atrocious",
+        "number": "130"
+    },
+    {
+        "name": "Lapras",
+        "hp": 130,
+        "type": "Water/Ice",
+        "species": "Transport",
+        "number": "131"
+    },
+    {
+        "name": "Ditto",
+        "hp": 48,
+        "type": "Noraml",
+        "species": "Transform",
+        "number": "132"
+    },
+    {
+        "name": "Eevee",
+        "hp": 55,
+        "type": "Noraml",
+        "species": "Evolution",
+        "number": "133"
+    },
+    {
+        "name": "Vaporeon",
+        "hp": 130,
+        "type": "Water",
+        "species": "Bubble Jet",
+        "number": "134"
+    },
+    {
+        "name": "Jolteon",
+        "hp": 65,
+        "type": "Elelctric",
+        "species": "Lightning",
+        "number": "135"
+    },
+    {
+        "name": "Flareon",
+        "hp": 65,
+        "type": "Fire",
+        "species": "Flame",
+        "number": "136"
+    },
+    {
+        "name": "Porygon",
+        "hp": 65,
+        "type": "Normal",
+        "species": "Virtual",
+        "number": "137"
+    },
+    {
+        "name": "Omanyte",
+        "hp": 35,
+        "type": "Rock/Water",
+        "species": "Spiral",
+        "number": "138"
+    },
+    {
+        "name": "Omastar",
+        "hp": 70,
+        "type": "Rock/Water",
+        "species": "Spiral",
+        "number": "139"
+    },
+    {
+        "name": "Kabuto",
+        "hp": 30,
+        "type": "Rock/Water",
+        "species": "Shellfish",
+        "number": "140"
+    },
+    {
+        "name": "Kabutops",
+        "hp": 60,
+        "type": "Rock/Water",
+        "species": "Shellfish",
+        "number": "141"
+    },
+    {
+        "name": "Aerodactyl",
+        "hp": 80,
+        "type": "Rock/Flying",
+        "species": "Fossil",
+        "number": "142"
+    },
+    {
+        "name": "Snorlax",
+        "hp": 160,
+        "type": "Normal",
+        "species": "Sleeping",
+        "number": "143"
+    },
+    {
+        "name": "Articuno",
+        "hp": 90,
+        "type": "Ice/Flying",
+        "species": "Freeze",
+        "number": "144"
+    },
+    {
+        "name": "Zapdos",
+        "hp": 90,
+        "type": "Electric/Flying",
+        "species": "Electric",
+        "number": "145"
+    },
+    {
+        "name": "Moltres",
+        "hp": 90,
+        "type": "Fire/Flying",
+        "species": "Flame",
+        "number": "146"
+    },
+    {
+        "name": "Dratini",
+        "hp": 41,
+        "type": "Dragon",
+        "species": "Dragon",
+        "number": "147"
+    },
+    {
+        "name": "Dragonair",
+        "hp": 61,
+        "type": "Dragon",
+        "species": "Dragon",
+        "number": "148"
+    },
+    {
+        "name": "Dragonite",
+        "hp": 91,
+        "type": "Dragon/Flying",
+        "species": "Dragon",
+        "number": "149"
+    },
+    {
+        "name": "Mewtwo",
+        "hp": 106,
+        "type": "Psychic",
+        "species": "Genetic",
+        "number": "150"
+    },
+    {
+        "name": "Mew",
+        "hp": 100,
+        "type": "Psychic",
+        "species": "New Species",
+        "number": "151"
     }
 ]
