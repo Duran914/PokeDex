@@ -5,24 +5,537 @@
         "type": "Grass/Poison",
         "species": "Seed",
         "number": "001"
-
     },
     {
-
         "name": "Ivysaur",
         "hp": 60,
         "type": "Grass/Poison",
         "species": "Seed",
         "number": "002"    
-
     },
     {
-
         "name": "Venusaur",
         "hp": 80,
         "type":  "Grass/Poison",
         "species": "Seed",
         "number": "003"    
-
+    },
+    {
+        "name": "Charmander",
+        "hp": 39,
+        "type": "Fire",
+        "species": "Lizard",
+        "number": "004"    
+    },
+    {
+        "name": "Charmeleon",
+        "hp": 58,
+        "type": "Fire",
+        "species": "Flame",
+        "number": "005"
+    },
+    {
+        "name": "Charizard",
+        "hp": 78,
+        "type": "Fire/Flying",
+        "species": "Flame",
+        "number": "006"    
+    },
+    {
+        "name": "Squirtle",
+        "hp": 44,
+        "type": "Water",
+        "species": "Turtle",
+        "number": "007"
+    },
+    {
+        "name": "Wartortle",
+        "hp": 59,
+        "type": "Water",
+        "species": "Turtle",
+        "number": "008"
+    },
+    {
+        "name": "Blastoise",
+        "hp": 79,
+        "type": "Water",
+        "species": "Shellfish",
+        "number": "009"
+    },
+    {
+        "name": "Caterpie",
+        "hp": 45,
+        "type": "Bug",
+        "species": "Worm",
+        "number": "010"
+    },
+    {
+        "name": "Metapod",
+        "hp": 50,
+        "type": "Bug",
+        "species": "Cocoon",
+        "number": "011"
+    },
+    {
+        "name": "Butterfree",
+        "hp": 60,
+        "type": "Bug/Flying",
+        "species": "Cocoon",
+        "number": "012"
+    },
+    {
+        "name": "Weedle",
+        "hp": 40,
+        "type": "Bug/Poison",
+        "species": "Bug",
+        "number": "013"
+    },
+    {
+        "name": "Kakuna",
+        "hp": 45,
+        "type": "Bug/Poison",
+        "species": "Cocoon",
+        "number": "014"
+    },
+    {
+        "name": "Beedrill",
+        "hp": 65,
+        "type": "Bug/Poison",
+        "species": "Bee",
+        "number": "015"
+    },
+    {
+        "name": "Beedrill",
+        "hp": 65,
+        "type": "Bug/Poison",
+        "species": "Bee",
+        "number": "015"
+    },
+    {
+        "name": "Pidgey",
+        "hp": 40,
+        "type": "Flying",
+        "species": "Bird",
+        "number": "016"
+    },
+    {
+        "name": "Pidgeotto",
+        "hp": 63,
+        "type": "Flying",
+        "species": "Bird",
+        "number": "017"
+    },
+    {
+        "name": "Pidgeot",
+        "hp": 83,
+        "type": "Flying",
+        "species": "Bird",
+        "number": "018"
+    },
+    {
+        "name": "Rattata",
+        "hp": 30,
+        "type": "Normal",
+        "species": "Mouse",
+        "number": "019"
+    },
+    {
+        "name": "Raticate",
+        "hp": 55,
+        "type": "Normal",
+        "species": "Mouse",
+        "number": "020"
+    },
+    {
+        "name": "Spearow",
+        "hp": 40,
+        "type": "Flying",
+        "species": "Bird",
+        "number": "021"
+    },
+    {
+        "name": "Fearow",
+        "hp": 65,
+        "type": "Flying",
+        "species": "Beak",
+        "number": "022"
+    },
+    {
+        "name": "Ekans",
+        "hp": 35,
+        "type": "Poison",
+        "species": "Snake",
+        "number": "023"
+    },
+    {
+        "name": "Arbok",
+        "hp": 60,
+        "type": "Poison",
+        "species": "Cobra",
+        "number": "024"
+    },
+    {
+        "name": "Pikachu",
+        "hp": 35,
+        "type": "Electric",
+        "species": "Mouse",
+        "number": "025"
+    },
+    {
+        "name": "Raichu",
+        "hp": 60,
+        "type": "Electric",
+        "species": "Mouse",
+        "number": "026"
+    },
+    {
+        "name": "Sandshrew",
+        "hp": 50,
+        "type": "Gound",
+        "species": "Mouse",
+        "number": "027"
+    },
+    {
+        "name": "Sandslash",
+        "hp": 75,
+        "type": "Gound",
+        "species": "Mouse",
+        "number": "028"
+    },
+    {
+        "name": "Nidoran♀",
+        "hp": 55,
+        "type": "Poison",
+        "species": "Poison Pin",
+        "number": "029"
+    },
+    {
+        "name": "Nidorina",
+        "hp": 70,
+        "type": "Poison",
+        "species": "Poison Pin",
+        "number": "030"
+    },
+    {
+        "name": "Nidoqueen",
+        "hp": 90,
+        "type": "Poison/Ground",
+        "species": "Drill",
+        "number": "031"
+    },
+    {
+        "name": "Nidoran♂",
+        "hp": 46,
+        "type": "Poison",
+        "species": "Poison Pin",
+        "number": "032"
+    },
+    {
+        "name": "Nidorino",
+        "hp": 61,
+        "type": "Poison",
+        "species": "Poison Pin",
+        "number": "033"
+    },
+    {
+        "name": "Nidorino",
+        "hp": 61,
+        "type": "Poison",
+        "species": "Poison Pin",
+        "number": "033"
+    },
+    {
+        "name": "Nidoking",
+        "hp": 81,
+        "type": "Poison/Ground",
+        "species": "Drill",
+        "number": "034"
+    },
+    {
+        "name": "Clefairy",
+        "hp": 70,
+        "type": "Fairy",
+        "species": "Fairy",
+        "number": "035"
+    },
+    {
+        "name": "Clefable",
+        "hp": 95,
+        "type": "Fairy",
+        "species": "Fairy",
+        "number": "036"
+    },
+    {
+        "name": "Vulpix",
+        "hp": 38,
+        "type": "Fire",
+        "species": "Fox",
+        "number": "037"
+    },
+    {
+        "name": "Ninetales",
+        "hp": 73,
+        "type": "Fire",
+        "species": "Fox",
+        "number": "038"
+    },
+    {
+        "name": "Jigglypuff",
+        "hp": 115,
+        "type": "Fairy",
+        "species": "Balloon",
+        "number": "039"
+    },
+    {
+        "name": "Wigglytuff",
+        "hp": 140,
+        "type": "Fairy",
+        "species": "Balloon",
+        "number": "040"
+    },
+    {
+        "name": "Zubat",
+        "hp": 40,
+        "type": "Poison/Flying",
+        "species": "Bat",
+        "number": "041"
+    },
+    {
+        "name": "Golbat",
+        "hp": 75,
+        "type": "Poison/Flying",
+        "species": "Bat",
+        "number": "042"
+    },
+    {
+        "name": "Oddish",
+        "hp": 45,
+        "type": "Grass/Poison",
+        "species": "Weed",
+        "number": "043"
+    },
+    {
+        "name": "Gloom",
+        "hp": 60,
+        "type": "Grass/Poison",
+        "species": "Weed",
+        "number": "044"
+    },
+    {
+        "name": "Vileplume",
+        "hp": 75,
+        "type": "Grass/Poison",
+        "species": "Flower",
+        "number": "045"
+    },
+    {
+        "name": "Paras",
+        "hp": 35,
+        "type": "Bug/Grass",
+        "species": "Mushroom",
+        "number": "046"
+    },
+    {
+        "name": "Parasect",
+        "hp": 60,
+        "type": "Bug/Grass",
+        "species": "Mushroom",
+        "number": "047"
+    },
+    {
+        "name": "Venonat",
+        "hp": 60,
+        "type": "Bug/Poison",
+        "species": "Insect",
+        "number": "048"
+    },
+    {
+        "name": "Venomoth",
+        "hp": 70,
+        "type": "Bug/Poison",
+        "species": "Moth",
+        "number": "049"
+    },
+    {
+        "name": "Diglett",
+        "hp": 10,
+        "type": "Ground",
+        "species": "Mole",
+        "number": "050"
+    },
+    {
+        "name": "Dugtrio",
+        "hp": 35,
+        "type": "Ground",
+        "species": "Mole",
+        "number": "051"
+    },
+    {
+        "name": "Meowth",
+        "hp": 40,
+        "type": "Normal",
+        "species": "Cat",
+        "number": "052"
+    },
+    {
+        "name": "Persian",
+        "hp": 65,
+        "type": "Normal",
+        "species": "Cat",
+        "number": "053"
+    },
+    {
+        "name": "Psyduck",
+        "hp": 50,
+        "type": "Water",
+        "species": "Duck",
+        "number": "054"
+    },
+    {
+        "name": "Golduck",
+        "hp": 80,
+        "type": "Water",
+        "species": "Duck",
+        "number": "055"
+    },
+    {
+        "name": "Mankey",
+        "hp": 40,
+        "type": "Fighting",
+        "species": "Monkey",
+        "number": "056"
+    },
+    {
+        "name": "Primeape",
+        "hp": 65,
+        "type": "Fighting",
+        "species": "Monkey",
+        "number": "057"
+    },
+    {
+        "name": "Growlithe",
+        "hp": 55,
+        "type": "Fire",
+        "species": "Puppy",
+        "number": "058"
+    },
+    {
+        "name": "Arcanine",
+        "hp": 90,
+        "type": "Fire",
+        "species": "Legendary",
+        "number": "059"
+    },
+    {
+        "name": "Poliwag",
+        "hp": 40,
+        "type": "Water",
+        "species": "Tadpole",
+        "number": "060"
+    },
+    {
+        "name": "Poliwhirl",
+        "hp": 65,
+        "type": "Water",
+        "species": "Tadpole",
+        "number": "061"
+    },
+    {
+        "name": "Poliwrath",
+        "hp": 90,
+        "type": "Water/Fighting",
+        "species": "Tadpole",
+        "number": "062"
+    },
+    {
+        "name": "Abra",
+        "hp": 25,
+        "type": "Psychic",
+        "species": "Psi",
+        "number": "063"
+    },
+    {
+        "name": "Kadabra",
+        "hp": 40,
+        "type": "Psychic",
+        "species": "Psi",
+        "number": "064"
+    },
+    {
+        "name": "Alakazam",
+        "hp": 55,
+        "type": "Psychic",
+        "species": "Psi",
+        "number": "065"
+    },
+    {
+        "name": "Machop",
+        "hp": 70,
+        "type": "Fighting",
+        "species": "Superpower",
+        "number": "066"
+    },
+    {
+        "name": "Machoke",
+        "hp": 80,
+        "type": "Fighting",
+        "species": "Superpower",
+        "number": "067"
+    },
+    {
+        "name": "Machamp",
+        "hp": 90,
+        "type": "Fighting",
+        "species": "Superpower",
+        "number": "068"
+    },
+    {
+        "name": "Bellsprout",
+        "hp": 50,
+        "type": "Grass/Poison",
+        "species": "Flower",
+        "number": "069"
+    },
+    {
+        "name": "Weepinbell",
+        "hp": 65,
+        "type": "Grass/Poison",
+        "species": "Flycatcher",
+        "number": "070"
+    },
+    {
+        "name": "Victreebel",
+        "hp": 80,
+        "type": "Grass/Poison",
+        "species": "Flycatcher",
+        "number": "071"
+    },
+    {
+        "name": "Tentacool",
+        "hp": 40,
+        "type": "Water/Poison",
+        "species": "Jellyfish",
+        "number": "072"
+    },
+    {
+        "name": "Tentacruel",
+        "hp": 80,
+        "type": "Water/Poison",
+        "species": "Jellyfish",
+        "number": "073"
+    },
+    {
+        "name": "Geodude",
+        "hp": 40,
+        "type": "Rock/Ground",
+        "species": "Rock",
+        "number": "074"
+    },
+    {
+        "name": "Graveler",
+        "hp": 55,
+        "type": "Rock/Ground",
+        "species": "Rock",
+        "number": "075"
     }
 ]

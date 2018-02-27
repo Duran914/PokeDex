@@ -34,8 +34,7 @@ class Ui{
 pickedPokemon.forEach(function(pokemon){
         
         pokemon.addEventListener('click', function(e){
-        const test = e.target.innerHTML;
-            console.log(test);
+        const pokemonName = e.target.innerHTML;
             
         const xhr = new XMLHttpRequest();
         xhr.open('GET', 'pokemon.json', true);
@@ -43,19 +42,18 @@ pickedPokemon.forEach(function(pokemon){
         xhr.onload = function(){
             if(this.status === 200){
             const pokemons = JSON.parse(this.responseText); 
-
+                
               for (let i = 0; i < pokemons.length; i++) {
-                  const element = pokemons[i];
+                  const jsonPokemon = pokemons[i];
+                  const li = document.createElement("li")
 
-                  if(element.name === test){
-                 console.log(element.name,element.type);
-                 ulPokemonName.innerHTML =`NAME: ${element.name}`;
-                 ulPokemonType.innerHTML = `TYPE: ${element.type}`;
-                 ulPokemonSpecies.innerHTML = `SPECIES: ${element.species}`;
-                 ulPokenmonHp.innerHTML = `HP: ${element.hp}`;
-                 ulPokemonNumber.innerHTML = element.number;
-                 ulPokemonPicture.setAttribute('src', `images/${test}.png`); 
-                 
+                  if(jsonPokemon.name === pokemonName){
+                    ulPokemonName.innerHTML =`NAME: ${jsonPokemon.name}`;
+                    ulPokemonType.innerHTML = `TYPE: ${jsonPokemon.type}`;
+                    ulPokemonSpecies.innerHTML = `SPECIES: ${jsonPokemon.species}`;
+                    ulPokenmonHp.innerHTML = `HP: ${jsonPokemon.hp}`;
+                    ulPokemonNumber.innerHTML = jsonPokemon.number;
+                    ulPokemonPicture.setAttribute('src', `images/${pokemonName}.png`); 
                 }
               }
             }
@@ -114,10 +112,6 @@ window.onload = function setTime() {
             }
          });
         }
-
-
-
-
 
 
     
