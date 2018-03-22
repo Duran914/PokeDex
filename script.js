@@ -9,71 +9,66 @@ const filterInput = document.querySelector('#pokemon-lookup');
       ulPokemonNumber = document.querySelector('#pokeNum');
       ulPokemonList = document.getElementsByClassName('pokemon-list');
       ulPokemonPicture = document.querySelector('.pokemon-img');
-      pickedPokemon = document.querySelectorAll('#pokemon');
-
-// Pokemon class
-
-class Pokemon{
-    constructor(name, type, species, hp, number){
-        this.name = name;
-        this.type = type;
-        this.species = species;
-        this.hp = hp;
-        this.number = number;
-    }
-    
-}   
-// const bulbasaur = new Pokemon('Bulbasaur', 'Grass/Posion', 'Seed', '45', '001');
-// const ivysaur = new Pokemon('Ivysaur', 'Grass/Posion', 'Seed', '60', '002');
-
-// ui class
-class Ui{
-
-}
-       
-pickedPokemon.forEach(function(pokemon){
-        
-        pokemon.addEventListener('click', function(e){
-        const pokemonName = e.target.innerHTML;
-            
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'pokemon.json', true);
-
-        xhr.onload = function(){
-            if(this.status === 200){
-            const pokemons = JSON.parse(this.responseText); 
-               
-                
-              for (let i = 0; i < pokemons.length; i++) {
-                  const jsonPokemon = pokemons[i];
-                    
-                  if(jsonPokemon.name === pokemonName){
-                    ulPokemonName.innerHTML =`NAME:${jsonPokemon.name}`;
-                    ulPokemonType.innerHTML = `TYPE:${jsonPokemon.type}`;
-                    ulPokemonSpecies.innerHTML = `SPECIES:${jsonPokemon.species}`;
-                    ulPokenmonHp.innerHTML = `HP:${jsonPokemon.hp}`;
-                    ulPokemonNumber.innerHTML = jsonPokemon.number;
-                    ulPokemonPicture.setAttribute('src', `images/${pokemonName}.png`); 
-                }
-              }
-            }
-        }
-        xhr.send();
-    });
-});
 
 // Event listeners
-    filterInput.addEventListener('keyup', filterPokemon);
+filterInput.addEventListener('keyup', filterPokemon);
+
+
+    // Function to load pokemon from json file
+    window.onload = function getJson(){
+        fetch('pokemon.json')
+         .then(res => res.json())
+           .then( pokemon => {
+            pokemon.forEach(function(poke) {
+            const pokemonName = document.createElement('li');
+               pokemonName.innerHTML = poke.name;
+               pokemonName.id = 'pokemon';
+               document.querySelector('.pokemon-list').appendChild(pokemonName);
+            });
+            choosePokemon();
+        })
+        .catch(err => console.log(err));
+        setTime();
+    }
+
+// Displayed the pokemon and its statistics when clicked
+
+  function choosePokemon(){
+    pickedPokemon = document.querySelectorAll('#pokemon');
+    pickedPokemon.forEach(function(pokemon){
+        pokemon.addEventListener('click', function(e){
+        const pokemonTargetName = e.target.innerHTML;         
+            fetch('pokemon.json')
+             .then(res => res.json())
+              .then(chosenPokemon => { 
+
+                for (let i = 0; i < chosenPokemon.length; i++) {
+                  const displayedPokemon = chosenPokemon[i];
+                    
+                  if(displayedPokemon.name === pokemonTargetName){
+                    ulPokemonName.innerHTML =`NAME:${displayedPokemon.name}`;
+                    ulPokemonType.innerHTML = `TYPE:${displayedPokemon.type}`;
+                    ulPokemonSpecies.innerHTML = `SPECIES:${displayedPokemon.species}`;
+                    ulPokenmonHp.innerHTML = `HP:${displayedPokemon.hp}`;
+                    ulPokemonNumber.innerHTML = displayedPokemon.number;
+                    ulPokemonPicture.setAttribute('src', `images/${pokemonTargetName}.png`); 
+                }
+              }
+            })
+            .catch(err => console.log(err));
+        });
+    });
+ }
 
     // sets time clock
-window.onload = function setTime() {
+function setTime() {
     const timeDiv = document.querySelector('.time');
     let currentTime = new Date();
     let hour = currentTime.getHours();
     let min = currentTime.getMinutes();
     let amPm;
 
-    // am pm for us anti weird americans 
+    // am/pm for us weird americans 
     if (hour == 12) {
         amPm = 'pm';
     }
@@ -98,8 +93,8 @@ window.onload = function setTime() {
     }
 
     timeDiv.innerHTML = `${hour}:${min}${amPm}`;
-    var t = setTimeout(setTime, 1000);
-
+    let t = setTimeout(setTime, 1000);
+    
 }
     // filter pokemon function 
 
@@ -116,6 +111,3 @@ window.onload = function setTime() {
             }
          });
         }
-
-
-    
